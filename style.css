@@ -465,10 +465,16 @@ footer h1 {
       font-size: 14px;
       border: none;
       background-color: transparent;
-      width: 100px;
+      width: 90px;
       height: 40px;
       color: var(--primaria);
       transition: .7s;
       flex-wrap: nowrap;
+    }
+
+    header > nav > button:hover {
+      background-color:lightgrey;
+      width: 130px;
+      height: 60px;
     }
 }
