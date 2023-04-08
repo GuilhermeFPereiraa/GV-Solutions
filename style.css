@@ -35,6 +35,7 @@ header > nav {
   flex: 70%;
   text-align: right;
   margin-right: 5%;
+  flex-wrap: nowrap;
 }
 
 header > nav > button {
@@ -45,6 +46,7 @@ header > nav > button {
   height: 45px;
   color: var(--primaria);
   transition: .7s;
+  flex-wrap: nowrap;
 }
 
 header > nav > button:hover {
