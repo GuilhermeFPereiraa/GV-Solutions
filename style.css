@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+  --primaria: rgb(25, 25, 110);
+  --secundaria: #ff3978;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+header > h1 {
+  /* border: 3px solid red; */
+  flex: 20%;
+  margin-left: 5%;
+  color: var(--primaria);
+  font-family: "Lobster", cursive;
+  font-size: 3.5vw;
+  text-align: left;
+  text-shadow: 1px 1px 3px var(--secundaria);
+}
+
+header > nav {
+  /* border: 3px solid green; */
+  flex: 70%;
+  text-align: right;
+  margin-right: 5%;
+}
+
+header > nav > button {
+  font-size: 17px;
+  border: none;
+  background-color: transparent;
+  width: 140px;
+  height: 45px;
+  color: var(--primaria);
+  transition: .7s;
+}
+
+header > nav > button:hover {
+  background-color:lightgrey;
+  width: 180px;
+  height: 65px;
+}
+
+.FaleConosco {
+  background-color: var(--primaria);
+  color: white;
+}
+
+.FaleConosco:hover {
+  background-color: var(--secundaria);
+}
+
+main > section {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+main .MainText {
+  /* border: 3px solid blue; */
+  flex: 45%;
+  margin-left: 5%;
+}
+
+.MainTextP {
+  font-size: 1.7vw;
+  letter-spacing: 7px;
+  font-weight: bolder;
+  color: var(--primaria);
+  text-shadow: 1px 1px 1px var(--primaria);
+}
+
+.MainText > h2 {
+  font-size: 6.1vw;
+  color: var(--primaria); 
+  font-family: "Lobster", cursive;
+  text-shadow: 1px 1px 3px black;
+}
+
+.MainTextP2 {
+  padding-top: 15px;
+  font-size: 1.3vw;
+}
+
+.BtnContrate {
+  padding-top: 20px;
+}
+
+.BtnContrate > button {
+  width: 170px;
+  height: 60px;
+  background-color: var(--secundaria);
+  color: white;
+  transition: .7s;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.BtnContrate > button:hover {
+  width: 180px;
+  height: 70px;
+  background-color: var(--primaria);
+}
+
+main .MainImg {
+  flex: 45%;
+  margin-right: 5%;
+}
+
+.MainImg > img {
+  /* border: 3px solid black; */
+  width: 45vw;
+  height: 550px;
+}
+
+.Information {
+  /* border: 3px solid black; */
+  margin: 100px 5% 0 5%;
+}
+
+.Information > h3 {
+  color: var(--primaria);
+  text-align: center;
+  font-size: 4vw;
+  padding-bottom: 60px;
+  text-shadow: 1px 1px 2px var(--primaria);
+}
+
+.Information h4 {
+  padding-bottom: 10px;
+  font-size: 1.4vw;
+}
+
+.Cards {
+  display: flex;
+}
+
+.CardText p {
+  font-size: 1.2vw;
+}
+
+.Card {
+  padding: 15px;
+  border: 2px solid var(--secundaria);
+  border-radius: 10px;
+  width: 35%;
+  margin: 1%;
+  text-align: center;
+  cursor: pointer;
+  transition: .7s;
+  box-shadow: 1px 1px 5px var(--primaria);
+}
+
+.Card:hover {
+  background-color: var(--primaria);
+  width: 40%;
+  color: white;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  margin-top: 100px;
+  background-image: linear-gradient(to bottom, var(--primaria), black);
+  color: white;
+  border-top: 5px solid var(--secundaria);
+}
+
+footer h1 {
+  font-family: "Lobster", cursive;
+  font-size: 35px;
+  font-weight: normal;
+  text-shadow: 1px 1px 3px var(--secundaria);
+}
+
+@media (max-width: 425px) {
+  header > h1 {
+    /* border: 3px solid red; */
+    flex: 90%;
+    margin: 10px 5% 10px 5%;
+    color: var(--primaria);
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  main > section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main .MainText {
+    /* border: 3px solid blue; */
+    flex: 90%;
+    margin: 10px 5% 10px 5%;
+  }
+  
+  .MainTextP {
+    font-size: 4.9vw;
+    letter-spacing: 7px;
+    font-weight: bolder;
+    color: var(--primaria);
+  }
+  
+  .MainText > h2 {
+    font-size: 14.5vw;
+    color: var(--primaria);
+  }
+  
+  .MainTextP2 {
+    padding-top: 15px;
+    font-size: 4vw;
+    font-weight: 400;
+  }
+  
+  .BtnContrate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .BtnContrate > button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--secundaria);
+    color: white;
+    transition: .7s;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  
+  .BtnContrate > button:hover {
+    width: 180px;
+    height: 70px;
+    background-color: var(--primaria);
+  }
+  
+  main .MainImg {
+    flex: 90%;
+    margin: 10px 5% 10px 5%;
+  }
+  
+  .MainImg > img {
+    /* border: 3px solid black; */
+    width: 95vw;
+    height: 350px;
+  }
+
+  .Information {
+    /* border: 3px solid black; */
+    margin: 50px 5% 0 5%;
+  }
+  
+  .Information > h3 {
+    color: var(--primaria);
+    text-align: center;
+    font-size: 7vw;
+    padding-bottom: 40px;
+  }
+  
+  .Information h4 {
+    padding-bottom: 10px;
+    font-size: 5.7vw;
+  }
+
+  .CardText p {
+    font-size: 4vw;
+  }
+  
+  .Cards {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Card {
+    padding: 15px;
+    border: 2px solid var(--secundaria);
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px 5% 10px 5%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .Card:hover {
+    background-color: var(--primaria);
+    width: 90%;
+    margin: 10px 5% 10px 5%;
+    color: white;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    margin-top: 40px;
+    background-image: linear-gradient(to bottom, var(--primaria), black);
+    color: white;
+    border-top: 5px solid var(--secundaria);
+  }
+  
+  footer h1 {
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  header > h1 {
+    /* border: 3px solid red; */
+    flex: 90%;
+    margin: 10px 5% 10px 5%;
+    color: var(--primaria);
+    font-family: "Lobster", cursive;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  main > section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main .MainText {
+    /* border: 3px solid blue; */
+    flex: 90%;
+    margin: 10px 5% 10px 5%;
+  }
+  
+  .MainTextP {
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 7px;
+    font-weight: bolder;
+    color: var(--primaria);
+  }
+  
+  .MainText > h2 {
+    font-size: 8vw;
+    color: var(--primaria);
+    text-align: center;
+  }
+  
+  .MainTextP2 {
+    padding-top: 15px;
+    font-size: 2.5vw;
+  }
+  
+  .BtnContrate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .BtnContrate > button {
+    width: 200px;
+    height: 60px;
+    background-color: var(--secundaria);
+    color: white;
+    transition: .7s;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  .MainImg > img {
+    /* border: 3px solid black; */
+    width: 100%;
+    height: 500px;
+  }
+  
+  .Information {
+    /* border: 3px solid black; */
+    margin: 100px 5% 0 5%;
+  }
+  
+  .Information > h3 {
+    color: var(--primaria);
+    text-align: center;
+    font-size: 4.8vw;
+    padding-bottom: 60px;
+  }
+  
+  .Information h4 {
+    padding-bottom: 10px;
+    font-size: 2.7vw;
+  }
+
+  .CardText p {
+    font-size: 2.3vw;
+  }
+  
+  .Cards {
+    display: block;
+  }
+  
+  .Card {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 15px;
+    border: 2px solid var(--secundaria);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .7s;
+  }
+  
+  .Card:hover {
+    background-color: var(--primaria);
+    width: 40%;
+    color: white;
+  }
+}
